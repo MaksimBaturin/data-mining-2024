@@ -1,5 +1,5 @@
 
-def NOD(a,b):
+def NOD(b):
     Binb = str(bin(b))
     if (Binb[len(Binb)-3: len(Binb)] == "000"):
         return 8
@@ -11,10 +11,8 @@ def NOD(a,b):
     return 1
     
 
-a = 8
-
 b = int(input("Введите 10-значное число: "))
 
-result = NOD(a, b)
+result = NOD(b)
 
 print("НОД:", result)

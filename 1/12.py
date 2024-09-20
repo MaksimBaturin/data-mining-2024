@@ -16,7 +16,9 @@ def determinant(matrix):
     
     det = 0
     for col in range(N):
-        minor = [row[:col] + row[col+1:] for row in matrix[1:]]
+        minor = []
+        for row in matrix[1:]:
+            minor.extend([row[:col] + row[col+1:]])
         minor_det = determinant(minor)
         det += ((-1) ** col) * matrix[0][col] * minor_det
     

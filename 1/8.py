@@ -12,7 +12,7 @@ def FibonacciPartialSums(N):
 N = 100
 
 fibonacci = FibonacciPartialSums(N)
-NumbOfDigits = int(input("Введите кол-во цифр: "))
+NumbOfDigits = int(input("Введите кол-во значащих цифр: "))
 index = 0
 for sum in fibonacci:
     if len(str(sum)) < NumbOfDigits:

@@ -6,6 +6,8 @@ class Frac:
     denominator = 0
 
     def __init__(self, numerator, denominator):
+        if denominator == 0:
+            raise ValueError("Нельзя создать дробь с нулевым знаменателем")
         self.numerator = numerator
         self.denominator = denominator
 
